@@ -14,3 +14,11 @@ int Calculator::Mul (double a, double b)
 {
     return a * b + 0.5;
 }
+
+int Calculator::Div (double a, double b)
+{
+    if (b == 0){
+        return std::numeric_limits<double>::quiet_NaN();
+    }
+    return a / b + 0.5
+}
